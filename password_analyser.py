@@ -33,8 +33,7 @@ for i in l:
     elif l[i] >= 1 and l[i] <=3:
         points += 1
     if l[i] == 0:
-        arg = "Their is no " + i + " character"
-        labels.append(arg)
+        labels.append(f"Their is no {i} character")
         
 """ Converting into Hash and checking against rockyou.txt """
 target_hash = hashlib.sha256(password.encode()).hexdigest()
